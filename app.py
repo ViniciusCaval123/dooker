@@ -24,9 +24,9 @@ def gravar():
   if nome and cpf and endereco:
     conn = mysql.connect()
     cursor = conn.cursor()
-    cursor.execute('insert into tabela_rena (nome, cpf, endereco) VALUES (%s, %s, %s)', (nome, cpf, endereco))
+    cursor.execute('insert into tbl_ac (nome, cpf, endereco) VALUES (%s, %s, %s)', (nome, cpf, endereco))
     conn.commit()
-    return 'Aluno cadastrado com sucesso :)'
+    return 'Aluno cadastrado!'
   return render_template('index.html')
 
 
