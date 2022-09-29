@@ -1,9 +1,19 @@
-<HTML>
-<form action="gravar" method="POST">
-<input type="text" name="nome"/>
-<input type="text" name="preco"/>
-<input type="text" name="categoria_produto"/>
-<input type="submit" valie="enviar" />
-</form>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
 
-</HTML>
+    <h1>Cadastro de Aluno</h1>
+</head>
+<body>
+    <form action="/gravar" method="POST">
+        <input type="text" placeholder="Seu nome" name="nome"/>
+        <input type="text" placeholder="Seu CPF" name="cpf"/>
+        <input type="text" placeholder="Seu endereco" name="endereco"/>
+        <input type="submit" value="Cadastrar"/>
+    </form>
+</body>
+</html>
